@@ -1,0 +1,208 @@
+@import 'menu-mobile.css';
+
+
+
+/* -------------------- Estilos Globais -------------------- */
+:root {
+  --cor-blue0: #0D121E;
+  --cor-blue1: #080B16;
+  --cor-orange0: #F0B35B;
+  --cor-light0: #FFFFFF;
+  --cor-light1: #FAFAFA;
+  --cor-grey: #4C4C4C;
+
+  /*Botões*/
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Blue0, #0D121E);
+  height: 6000px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a,
+li {
+  font-family: 'MedievalSharp', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 0.875rem;
+}
+
+/* ---- Header ---- */
+
+header {
+  width: 94.4%;
+  height: 6rem;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+header .menu__itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+header .menu__itens ul {
+  display: flex;
+  align-items: center;
+}
+
+header .menu__itens img {
+  width: 5.0625rem;
+  height: 5.5rem;
+  flex-shrink: 0;
+}
+
+header .menu__itens ul a {
+  margin-left: 2.5rem;
+  color: #FFF;
+}
+
+header .menu__itens .btn-agend {
+  margin-right: 2rem;
+}
+
+
+/* ---- Home ---- */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51.25rem;
+  flex-shrink: 0;
+  background:
+    linear-gradient(180deg, #080B15 0.57%, rgba(12, 14, 20, 0.50) 22.92%, rgba(14, 15, 19, 0.52) 49.11%, rgba(15, 16, 19, 0.80) 68.5%, #0D121E 93.45%, #0D121E 100%),
+    url("../assets/images/home-bg.jpg") no-repeat center center,
+    rgb(0, 0, 0) 50% / cover no-repeat;
+}
+
+#home .home__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#home .home__content p {
+  color: var(--Light0, #FFF);
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.55);
+  font-size: 2.75rem;
+  font-weight: 700;
+  max-width: 57.5625rem;
+}
+
+#home .home__content span {
+  color: var(--Light0, #FFF);
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.85);
+  margin-top: 0.88rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sobre */
+
+#sobre {
+  height: 55.25rem;
+  flex-shrink: 0;
+}
+
+#sobre .sobre__content{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-agend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13.1875rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  background-color: var(--cor-orange0, #F0B35B);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--Blue-0, #0D121E);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-orange0, #F0B35B);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #93621e;
+}
+
+::selection {
+  background-color: var(--cor-orange0);
+}
