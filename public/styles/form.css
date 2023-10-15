@@ -1,9 +1,96 @@
-#formulario{
-  border: 1px solid red;
+#form .space {
+  height: 200px;
 }
-#formulario form{
+
+#form .formulario {
+  width: 620px;
+  height: content;
+  margin: 0 auto 100px auto;
+  background-color: #080B16;
+  color: #FFF;
+  border-radius: 16px;
+  position: relative;
+}
+
+#form .formulario .fechar-formulario {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  position: absolute;
+  right: 0;
+  width: 38px;
+  height: 38px;
+}
+
+#form .formulario h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#form .formulario form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 1.5rem;
 }
-#formulario form
+
+#form .formulario form .section-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 29px auto;
+}
+
+#form .formulario form .section-form label {
+  margin-bottom: 0.5rem;
+}
+
+#form .formulario form .section-form input {
+  width: 450px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+#form .formulario form .btn-submit {
+  width: 450px;
+  height: 44px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #F0B35B;
+  color: #0D121E;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#local::placeholder,
+#data::placeholder,
+#nome::placeholder,
+#hora::placeholder {
+  color: #080B16;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+#data {
+  color: #080B16;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 1rem;
+}

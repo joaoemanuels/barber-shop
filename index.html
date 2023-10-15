@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barber-shop</title>
   <link rel="stylesheet" href="public/styles/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins&display=swap" rel="stylesheet">
@@ -23,7 +22,9 @@
         <li><a href="#equipe">Quem somos</a></li>
         <li><a href="#unidade">Contatos</a></li>
       </ul>
-      <a href="" class="btn-agend">Agendar horário</a>
+      <a href="#form"><button class="mostrar-formulario btn-agend">Agendar horário</button></a>
+
+
     </nav>
     <div class="btn-whatsapp">
       <a>
@@ -33,35 +34,50 @@
   </header>
 
   <main>
+
     <section id="home">
       <div class="home__content">
         <p>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</p>
         <span>Horário de funcionamento das 08:00 às 19:00</span>
+        <a href="#form"><button class="mostrar-formulario btn-agend">Agendar horário</button></a>
+      </div>
+    </section>
 
-        <button id="mostrar-formulario" class="btn-agend">Agendar horário</button>
-        <div id="formulario" style="display: none;">
-          <button id="fechar-formulario">X</button>
-          <h2>AGENDAR HORÁRIO</h2>
-          <form>
+    <section id="form">
+      <div class="space"></div>
+      <div class="formulario" style="display: none;">
+        <button class="fechar-formulario">X</button>
+        <h2>AGENDAR HORÁRIO</h2>
+        <form>
+          <div class="btn-name section-form">
             <label for="nome">Nome completo:</label>
             <input type="text" id="nome" placeholder="Digite seu nome">
+          </div>
 
+          <div class="btn-date section-form">
             <label for="data">Selecione a data:</label>
             <input type="date" id="data" placeholder="Digite seu e-mail">
+          </div>
 
+          <div class="btn-unid section-form">
             <label for="unidade">Selecione uma unidade:</label>
             <div class="custom-dropdown">
               <input type="text" id="local" placeholder="Clique para selecionar">
               <ul class="dropdown-list">
-                <li>Unidade 1</li>
-                <li>Unidade 2</li>
-                <li>Unidade 3</li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
+          </div>
 
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+          <div class="btn-hora section-form">
+            <label for="hora">Selecione a data:</label>
+            <input type="number" id="hora" placeholder="Digite seu e-mail">
+          </div>
+          
+          <button type="submit" class="btn-submit">Enviar</button>
+        </form>
       </div>
     </section>
 
@@ -255,7 +271,7 @@
         </a>
       </div>
       <div class="unidade__logo">
-        <img src="public/assets/images/logo-blue 1.jpg" alt="">
+       <a href="#home"><img src="public/assets/images/logo-blue 1.jpg" alt=""></a>
       </div>
     </section>
   </main>
@@ -265,7 +281,9 @@
 
 
   <script src="js/script.js" type="module"></script>
+  <script src="js/modules/form.js"></script>
   <script src="./js/modules/vanilla-tilt.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 
 </html>

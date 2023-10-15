@@ -474,6 +474,7 @@ header .btn-whatsapp{
   font-weight: 700;
   font-size: 1rem;
   color: var(--cor-blue0, #0D121E);
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
