@@ -1,0 +1,9 @@
+#formulario{
+  border: 1px solid red;
+}
+#formulario form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#formulario form
