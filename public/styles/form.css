@@ -47,7 +47,8 @@
   margin-bottom: 0.5rem;
 }
 
-#form .formulario form .section-form input {
+#form .formulario form .section-form input,
+select {
   width: 450px;
   height: 44px;
   border-radius: 8px;
@@ -67,6 +68,19 @@
   cursor: pointer;
 }
 
+#nome,
+#data,
+#local,
+#hora {
+  padding: 0;
+  margin: 0;
+  padding-left: 16px;
+  color: #080B16;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+
 
 
 
@@ -82,15 +96,8 @@
 #data::placeholder,
 #nome::placeholder,
 #hora::placeholder {
-  color: #080B16;
+  color: #160b08;
   font-size: 0.75rem;
   font-weight: 400;
-  padding-left: 1rem;
-}
-
-#data {
-  color: #080B16;
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 0 1rem;
+  padding-left: 0;
 }
