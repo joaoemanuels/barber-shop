@@ -82,11 +82,11 @@ span {
 
 header {
   width: 100%;
-  height: 6rem;
   flex-shrink: 0;
   margin: 0 auto;
   position: fixed;
   background-color: var(--cor-blue0);
+  z-index: 2;
 }
 
 header.fixed {
@@ -94,10 +94,12 @@ header.fixed {
 }
 
 header .menu__itens {
+  width: 96%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 5px;
+  margin: 5px auto 0 auto;
 }
 
 header .menu__itens ul {
@@ -111,21 +113,41 @@ header .menu__itens img {
   flex-shrink: 0;
 }
 
-header .menu__itens ul a {
+header .menu__itens ul li {
   margin-left: 2.5rem;
+}
+
+header .menu__itens ul li a {
   color: var(--cor-light0);
 }
 
-header .menu__itens .btn-agend {
-  margin-right: 2rem;
-}
-header .btn-whatsapp{
+header .btn-whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   cursor: pointer;
 }
 
+header .menu__itens ul li:not(:first-child)::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--cor-orange0);
+  margin-top: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+header .menu__itens ul li:hover::after {
+  transform: scaleX(1);
+}
+
+header .menu__itens .btn-agend:hover {
+  background-color: #93621e;
+  border-radius: 5px;
+  color: var(--cor-light0, #ffffff);
+  border-right: 2px solid var(--cor-light1);
+  border-bottom: 2px solid var(--cor-light1);
+}
 
 /* ---- Home ---- */
 
@@ -182,6 +204,11 @@ header .btn-whatsapp{
 
 #sobre .sobre__content .sobre__content-left {
   margin: 0 auto;
+}
+
+#sobre .sobre__content .sobre__content-left .sobre-cards-both {
+  display: flex;
+  flex-direction: row;
 }
 
 #sobre .sobre__content .sobre__content-left .sobre-cards-both img {
@@ -277,6 +304,13 @@ header .btn-whatsapp{
   border-radius: 4px 4px 0px 0px;
 }
 
+#servicos .servicos__container .servicos__card .servicos__card-img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  border-radius: 7px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
 #servicos .servicos__container .servicos__card .servicos__card-content {
   border-radius: 0px 0px 8px 8px;
   background: var(--cor-light0, #FFF);
@@ -307,7 +341,7 @@ header .btn-whatsapp{
 
 /* ---- Equipe ---- */
 
-#equipe {
+#equipe{
   height: 610px;
   padding: 108px auto;
   background-color: var(--cor-blue1);
@@ -320,7 +354,7 @@ header .btn-whatsapp{
   width: auto;
   display: grid;
   grid-template-columns: .1fr 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 60px;  border: 1px solid red;
 }
 
 #equipe .equipe__container .equipe__container-left {
@@ -338,6 +372,7 @@ header .btn-whatsapp{
   letter-spacing: 7.26px;
   white-space: nowrap;
 }
+
 
 #equipe .equipe__container .equipe__container-card {
   width: 318px;
@@ -359,6 +394,7 @@ header .btn-whatsapp{
   font-weight: 700;
   position: absolute;
   margin-bottom: 58px;
+  z-index: 1;
 }
 
 #equipe .equipe__container .equipe__container-card-img img {
@@ -371,6 +407,10 @@ header .btn-whatsapp{
   display: flex;
   justify-content: space-evenly;
   margin-top: 16px;
+}
+
+#equipe .equipe__container .equipe__container-card .equipe__container-card-icons img:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%);
 }
 
 /* ---- Unidade ---- */
@@ -404,6 +444,13 @@ header .btn-whatsapp{
   display: flex;
   justify-content: center;
   align-items: end;
+  cursor: pointer;
+
+}
+
+#unidade .unidade__cards .unidade__cards-content:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 #unidade .unidade__cards .unidade__cards-content img {
@@ -442,6 +489,10 @@ header .btn-whatsapp{
   margin: 116px auto 0 auto;
 }
 
+#unidade .unidade__icons img:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%);
+}
+
 #unidade .unidade__logo {
   width: 166px;
   height: 196px;
@@ -457,6 +508,52 @@ header .btn-whatsapp{
 
 
 
+/* -------------------- Media queries para layouts responsivos -------------------- */
+
+/*-----Tablet / Laptop / Desktop-----*/
+@media screen and (max-width: 1255px) {
+  #equipe .equipe__container {
+    grid-template-columns: .1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  #servicos .servicos__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+  }
+    #equipe{
+      display: none;
+    }
+  #equipe .equipe__container {
+    grid-template-columns: .5fr 1fr 1fr 1fr;
+  }
+
+  #equipe .equipe__container .equipe__container-left {
+    display: ;
+  }
+
+}
+
+/*-----Tablet-----*/
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 863px) {}
+
+@media screen and (max-width: 765px) {}
+
+/*-----Mobile-----*/
+@media screen and (max-width: 690px) {}
+
+@media screen and (max-width: 609px) {}
+
+@media screen and (max-width: 537px) {}
+
+/*-----Small Mobile-----*/
+@media screen and (max-width: 452px) {}
+
+@media screen and (max-width: 380px) {}
 
 
 
