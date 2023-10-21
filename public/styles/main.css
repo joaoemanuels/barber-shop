@@ -629,6 +629,10 @@ header nav .btn-agend:hover {
   #unidade .unidade__cards .unidade__cards-content {
     width: 450px;
   }
+
+  #form .formulario {
+    width: 420px;
+  }
 }
 
 @media screen and (max-width: 609px) {
@@ -649,7 +653,10 @@ header nav .btn-agend:hover {
     width: 9.1875rem;
     height: 2rem;
     font-size: .7rem;
-
+  }
+  header nav .btn-whatsapp img {
+    width: 60px;
+    height: 60px;
   }
 
   #home .home__content p {
@@ -665,6 +672,19 @@ header nav .btn-agend:hover {
 @media screen and (max-width: 452px) {
   #unidade .unidade__cards .unidade__cards-content {
     width: 270px;
+  }
+
+  #form .formulario {
+    width: 280px;
+  }
+
+  #form .formulario h2 {
+    font-size: 1.4rem;
+  }
+
+  #form .formulario form .section-form input,
+  select {
+    height: 34px;
   }
 }
 

@@ -4,7 +4,6 @@
 
 #form .formulario {
   width: 620px;
-  height: content;
   margin: 0 auto 100px auto;
   background-color: #080B16;
   color: #FFF;
@@ -41,21 +40,23 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto 29px auto;
+  width: 90%;
 }
 
 #form .formulario form .section-form label {
   margin-bottom: 0.5rem;
+  width: auto;
 }
 
 #form .formulario form .section-form input,
 select {
-  width: 450px;
+  width: 100%;
   height: 44px;
   border-radius: 8px;
 }
 
 #form .formulario form .btn-submit {
-  width: 450px;
+  width: 90%;
   height: 44px;
   margin: 0 auto;
   border-radius: 8px;
