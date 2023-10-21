@@ -4,19 +4,20 @@
 
 @media (max-width: 992px) {
   nav {
-    padding: 0 5% !important;
+    padding: 15px 5% !important;
   }
 
   [data-menu="button"] {
     display: block;
     background-color: transparent;
     border: none;
-    border-top: 3px #00d2df solid;
+    border-top: 3px #F0B35B solid;
     padding: .8rem 1rem;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
     z-index: 100;
+
   }
 
   [data-menu="button"]::before {
@@ -27,7 +28,7 @@
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #00d2df;
+    background-color: #F0B35B;
     transition: .3s transform;
   }
 
@@ -39,7 +40,7 @@
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #00d2df;
+    background-color: #F0B35B;
     transition: .3s transform;
   }
 
@@ -59,9 +60,10 @@
     z-index: 50;
     margin: 0;
     font-family: "Inter", sans-serif;
-    
+
   }
-  [data-menu="list"] li{
+
+  [data-menu="list"] li {
     margin-top: 1rem;
     padding: 5px;
   }
