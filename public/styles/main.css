@@ -154,12 +154,12 @@ header nav .btn-agend:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 51.25rem;
+  height: 500px;
   flex-shrink: 0;
-  background:
-    linear-gradient(180deg, #080B15 0.57%, rgba(12, 14, 20, 0.50) 22.92%, rgba(14, 15, 19, 0.52) 49.11%, rgba(15, 16, 19, 0.80) 68.5%, #0D121E 93.45%, #0D121E 100%),
-    url("../assets/images/home-bg.jpg") no-repeat center center,
-    rgb(0, 0, 0) 50% / cover no-repeat;
+  background-image: url("../assets/images/home-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  box-shadow: 5px 10px 10px #080B16;
 }
 
 #home .home__content {
@@ -341,12 +341,20 @@ header nav .btn-agend:hover {
 /* ---- Equipe ---- */
 
 #equipe {
-  height: 610px;
-  padding: 108px auto;
-  background-color: var(--cor-blue1);
-  display: flex;
-  justify-content: center;
+  height: min-content;
   align-items: center;
+  padding: 90px 0;
+}
+
+.leftequipe {
+  text-align: center;
+  color: #636A86;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 7.26px;
+  white-space: nowrap;
+  margin: 0 0 50px 0;
+  display: none;
 }
 
 #equipe .equipe__container {
@@ -354,7 +362,6 @@ header nav .btn-agend:hover {
   display: grid;
   grid-template-columns: .1fr 1fr 1fr 1fr;
   gap: 60px;
-  border: 1px solid red;
 }
 
 #equipe .equipe__container .equipe__container-left {
@@ -526,22 +533,36 @@ header nav .btn-agend:hover {
     width: 85%;
   }
 
-  #equipe {
-    display: none;
-  }
-
   #equipe .equipe__container {
-    grid-template-columns: .5fr 1fr 1fr 1fr;
-  }
-
-  #equipe .equipe__container .equipe__container-left {
-    display: ;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
   }
 
   #sobre .sobre__content .sobre__content-left .sobre-cards-both img:nth-child(2) {
     display: none;
   }
 
+  #equipe {
+    height: min-content;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  .leftequipe {
+    display: block;
+  }
+
+  #equipe .equipe__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 0 auto;
+    width: min-content;
+  }
+
+  #equipe .equipe__container .equipe__container-left {
+    display: none;
+  }
 }
 
 /*-----Tablet-----*/
@@ -633,6 +654,10 @@ header nav .btn-agend:hover {
   #form .formulario {
     width: 420px;
   }
+
+  #equipe .equipe__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 609px) {
@@ -654,6 +679,7 @@ header nav .btn-agend:hover {
     height: 2rem;
     font-size: .7rem;
   }
+
   header nav .btn-whatsapp img {
     width: 60px;
     height: 60px;
@@ -783,6 +809,7 @@ header nav .btn-agend:hover {
 .mostrar {
   display: block;
 }
+
 
 ::-webkit-scrollbar {
   width: 10px;
