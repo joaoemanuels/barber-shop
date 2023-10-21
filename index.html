@@ -9,23 +9,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
   <header>
     <nav data-menu="suave">
-        <button data-menu='button' aria-controls="menu"></button>
-        <ul data-menu='list' id="menu">
-          <li><a href="#home"><img src="./public/assets/icons/Logo.svg" alt="s"></a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#equipe">Quem somos</a></li>
-          <li><a href="#unidade">Contatos</a></li>
-        </ul>
-        <a href="#form"><button class="mostrar-formulario btn-agend">Agendar horário</button></a>
-
-
+      <button data-menu='button' aria-controls="menu"></button>
+      <ul data-menu='list' id="menu">
+        <a href="#home" class="imgNav">
+          <li><img src="./public/assets/icons/Logo.svg" alt="s"></li>
+        </a>
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="#servicos">
+          <li>Serviços</li>
+        </a>
+        <a href="#equipe">
+          <li>Quem somos</li>
+        </a>
+        <a href="#unidade">
+          <li>Contatos</li>
+        </a>
+      </ul>
+      <a href="#form"><button class="mostrar-formulario btn-agend">Agendar horário</button></a>
       <div class="btn-whatsapp">
         <a>
           <img src="public/assets/icons/Button Whatsapp.svg" alt="">
@@ -274,9 +285,8 @@
 
 
   <script src="js/script.js" type="module"></script>
-  <script src="js/modules/form.js"></script>
   <script src="./js/modules/vanilla-tilt.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-@import 'menu-mobile.css';
-@import 'form.css';
+@import './menu-mobile.css';
+@import './form.css';
 
 
 
@@ -112,11 +112,11 @@ header nav img {
   flex-shrink: 0;
 }
 
-header nav ul li {
+header nav ul a {
   margin-left: 2.5rem;
 }
 
-header nav ul li a {
+header nav ul a li {
   color: var(--cor-light0);
 }
 
@@ -127,7 +127,7 @@ header nav .btn-whatsapp {
   cursor: pointer;
 }
 
-header nav ul li:not(:first-child)::after {
+header nav ul a:not(:first-child)::after {
   content: "";
   display: block;
   border-bottom: 2px solid var(--cor-orange0);
@@ -136,7 +136,7 @@ header nav ul li:not(:first-child)::after {
   transition: transform 0.3s ease;
 }
 
-header nav ul li:hover::after {
+header nav ul a:hover::after {
   transform: scaleX(1);
 }
 
@@ -372,7 +372,6 @@ header nav .btn-agend:hover {
   letter-spacing: 7.26px;
   white-space: nowrap;
 }
-
 
 #equipe .equipe__container .equipe__container-card {
   width: 318px;
@@ -671,7 +670,76 @@ header nav .btn-agend:hover {
 
 
 
+/* -------------------- Animações e Transições -------------------- */
 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* -------------------- Outros Estilos -------------------- */
 
 .btn-agend {
   display: flex;
@@ -686,6 +754,14 @@ header nav .btn-agend:hover {
   font-size: 1rem;
   color: var(--cor-blue0, #0D121E);
   cursor: pointer;
+}
+
+.item {
+  display: none;
+}
+
+.mostrar {
+  display: block;
 }
 
 ::-webkit-scrollbar {

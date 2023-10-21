@@ -49,6 +49,8 @@
 
 
   [data-menu="list"] {
+    width: 300px;
+    text-align: center;
     display: none;
     position: absolute;
     top: 0;
@@ -56,16 +58,19 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
     background-color: #151515;
     border-radius: 7px;
-    padding: 82px 0 10px;
     z-index: 50;
     margin: 0;
+    padding-bottom: 15px;
     font-family: "Inter", sans-serif;
-
+    border: 2px solid #F0B35B;
   }
 
   [data-menu="list"] li {
-    margin-top: 1rem;
     padding: 5px;
+  }
+
+  [data-menu="list"] .imgNav {
+    display: none;
   }
 
   [data-menu="list"].active {
