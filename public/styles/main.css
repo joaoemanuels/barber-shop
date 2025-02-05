@@ -215,29 +215,9 @@ header nav .btn-agend:hover {
   margin: 0 auto;
 }
 
-#sobre .sobre__content .sobre__content-left .sobre-cards-both {
-  display: flex;
-  flex-direction: row;
-}
-
-#sobre .sobre__content .sobre__content-left .sobre-cards-both img {
-  width: 270px;
-  height: 350px;
-  border-radius: 7px;
-}
-
-#sobre .sobre__content .sobre__content-left .sobre-cards-both img:nth-child(2) {
-  margin-left: 1rem;
-}
-
-#sobre .sobre__content .sobre__content-left .sobre-cards-bottom {
-  width: auto;
-  margin-top: 1rem;
-}
-
-#sobre .sobre__content .sobre__content-left .sobre-cards-bottom img {
-  width: 100%;
-  height: 180px;
+#sobre .sobre__content .sobre__content-left h3 {
+  color: white;
+  font-size: 2rem;
 }
 
 #sobre .sobre__content .sobre__content-right {
@@ -721,6 +701,20 @@ header nav .btn-agend:hover {
   #form .formulario form .section-form input,
   select {
     height: 34px;
+  }
+  #sobre .sobre__content .sobre-cards-left{
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+  }
+  #sobre .sobre__content .sobre__content-left h3 {
+    text-align: center;
+
+  }
+
+  #sobre .sobre__content .sobre__content-left video {
+    width: 100%;
+    margin: 0;
   }
 }
 

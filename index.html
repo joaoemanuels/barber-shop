@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barber-shop</title>
+  <title>KingCut</title>
   <link rel="stylesheet" href="public/styles/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="public/assets/images/KingCut.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -18,7 +19,7 @@
       <button data-menu='button' aria-controls="menu"></button>
       <ul data-menu='list' id="menu">
         <a href="#home" class="imgNav">
-          <li><img src="./public/assets/icons/Logo.svg" alt="s"></li>
+          <li><img src="./public/assets/images/KingCut.png" alt="s"></li>
         </a>
         <a href="#home">
           <li>Home</li>
@@ -87,12 +88,20 @@
     <section id="sobre">
       <div class="sobre__content">
         <div class="sobre__content-left elemento1">
-          <div class="sobre-cards-both">
-            <img src="./public/assets/images/sobre1.jpg" alt="s">
-            <img src="./public/assets/images/sobre2.jpg" alt="s">
-          </div>
-          <div class="sobre-cards-bottom">
-            <img src="./public/assets/images/sobre3.jpg" alt="s">
+          <div class="sobre-cards-left">
+            <h3>Mestre Os 4 Elementos do Barbear Perfeito</h3>
+            <video width="640" height="360" autoplay loop muted >
+              <source src="public/assets/videos/sobre barber.mp4" type="video/mp4">
+            </video>
+            <p style="font-size: 14px; margin-top: 5px; color: rgb(189, 188, 188);">
+              Vídeo de <a href="https://pixabay.com/pt/users/mostafa_meraji-13551092/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=39763" target="_blank">
+                Mostafa Meraji
+              </a> no 
+              <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=39763" target="_blank">
+                Pixabay
+              </a>
+            </p>
+            
           </div>
         </div>
         <div class="sobre__content-right elemento2">
@@ -276,13 +285,10 @@
         </a>
       </div>
       <div class="unidade__logo">
-        <a href="#home"><img src="public/assets/images/logo-blue 1.jpg" alt=""></a>
+        <a href="#home"><img src="public/assets/images/KingCut-b.png" alt=""></a>
       </div>
     </section>
   </main>
-
-  <footer> </footer>
-
 
 
   <script src="js/script.js" type="module"></script>
